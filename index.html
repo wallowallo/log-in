@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Herp derp</title>
+  </head>
+  <body>
+    <h1 style="color:pink">Welcome to Herp Derp, please log in!</h1>
+    <p>Log in:</p>
+    <main class="flex">
+    <form name="login" action="index_submit" method="get" autocomplete="on" accept-charset="utf-8">
+   <p>
+    <label class="justify">Email:&nbsp;
+      <input type="text" name="email" placeholder="your@email.com" required>
+    </label>
+  </p>
+  <p>
+    <label class="justify">Password:&nbsp;
+       <input type="password" name"password" placeholder="**********" required>
+     </label>
+   </p>
+   <p>
+             <label class="justify">&nbsp;
+                 <button type="button" value="Login" onclick="printstuff()">Log in
+                 </button>
+             </label>
+         </p>
+  </form>
+  <script>
+  function printstuff(){
+  console.log("login");
+  }
+  </script>
+  </body>
+  <style>
+  body {
+   background-color: seashell;
+   font-family: sans-serif;
+}
+main {
+   background-color: rgba(255, 255, 255, 0.7);
+   padding: 0.2em;
+}
+p {
+   margin: 0.15em;
+}
+h1 {
+   font-size: larger;
+}
+input:not([type="submit"]) {
+   width: 15em;
+}
+input {
+   max-width: 95%;
+}
+label {
+   margin-right: 0.5em;
+}
+.right {
+   float: right;
+}
+input.right {
+   margin-top: 3px;
+}
+.justify {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.flex {
+   display: flex;
+}
+.column {
+   display: flex;
+   flex-direction: column;
+</style>
+</html>
